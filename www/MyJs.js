@@ -5,6 +5,7 @@ var score = 0;
 var helth = 100;
 var MovePlayer;
 var i = 0;
+var ibg = 0;
 var mP = 0;
 var bombArr = [];
 var draw =0;
@@ -106,6 +107,10 @@ var bangMilk = bangAnim;
 pjs.game.newLoop("myGame", function () {
     // Очистка прошлого кадра отрисовки
     pjs.game.clear();
+
+    $('.bg__wrapper').css(
+        'background-position-y',ibg-- +'px'
+    )
 
     if (i < 120 / speed) {
         i++;
@@ -244,6 +249,8 @@ pjs.game.newLoop("myGame", function () {
 
     if(draw==1){
         $('.gameover').show();
+        $('.score').empty();
+        $('.score').html(score);
     }
 
 });
