@@ -250,7 +250,7 @@ pjs.game.newLoop("myGame", function () {
     if(draw==1){
         $('.gameover').show();
         $('.score').empty();
-        $('.score').html(score);
+        $('.score').html(score*helth);
     }
 
 });
