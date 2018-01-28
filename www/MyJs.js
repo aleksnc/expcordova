@@ -250,7 +250,13 @@ pjs.game.newLoop("myGame", function () {
     if(draw==1){
         $('.gameover').show();
         $('.score').empty();
-        $('.score').html(score*helth);
+        var coefHelth=helth;
+        if(helth==0){
+            coefHelth=1;
+        }
+        $('.score').html(score);
+        $('.helth').html(helth);
+        $('.total').html(score*coefHelth);
     }
 
 });

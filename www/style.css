@@ -71,14 +71,24 @@ html{
 
 
 .infoScore{
-    font-size: 20px;
+font-size: 0;
     text-align: center;
 }
 
 .infoScore span{
     display: inline-block;
+    font-size: 20px;
     vertical-align: middle;
+    text-align: right;
+    width: 40%;
 }
+
+.infoScore span:first-child{
+    text-align: left;
+    width: 50%;
+
+}
+
 
 canvas{
     z-index: 1 !important;
