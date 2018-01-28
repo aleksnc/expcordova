@@ -21,7 +21,7 @@ html{
 
 .startPage{
     height: 100vh;
-    background-image: url(./image/title.jpg);
+    background-image: url(../image/title.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +95,7 @@ canvas{
 }
 
 .bg__wrapper{
-    background-image: url(./image/bg1.gif);
+    background-image: url(../image/bg1.gif);
     background-size: 100% auto;
     background-position-y: 20px;
     background-repeat: repeat;
