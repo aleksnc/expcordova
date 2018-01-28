@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
-
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-2.2.3.min.js" rel="script"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">HelloW!</p>
+
+<div class="bg__wrapper">
+    <div class="bg"></div>
+</div>
+<div class="startPage">
+<div class="start__wrapper">
+        <button class="start" type="button" onclick="startPage()">START</button>
+</div>
+</div>
+
+<div class="gameover" style="display: none">
+    <div class="info">
+        <h1>GAME OVER</h1>
+        <div class="infoScore">
+            <span><b>your score: </b></span>
+            <span class="score"><b>0000</b></span>
         </div>
     </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+</div>
 </body>
+
+
+<script type="text/javascript" src="point.js"></script>
+
+<script src="MyJs.js" rel="script"></script>
 
 </html>
