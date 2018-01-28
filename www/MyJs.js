@@ -1,11 +1,3 @@
-function  startPage() {
-    console.log('sdfsdf');
-    $('.startPage').hide();
-    pjs.game.startLoop("myGame");
-}
-
-
-
 var UfoMaxPosX = 5;
 var speed = 0.7;
 var spaceShips = [];
@@ -18,9 +10,22 @@ var bombArr = [];
 var draw =0;
 
 
+$(document).ready(function () {
+    $(document).on('click','.start',function () {
+        console.log('sdfsdf');
+        $('.startPage').hide();
+
+        superstart()
+    })
+})
+
 const pjs = new PointJS('2D', 720 / 2, 1280 / 2, { // 16:9
     backgroundColor: 'transparent' // if need
 });
+
+
+
+function superstart() {
 
 pjs.system.initFullPage();
 pjs.system.initFPSCheck();
@@ -242,3 +247,8 @@ pjs.game.newLoop("myGame", function () {
     }
 
 });
+
+
+
+pjs.game.startLoop("myGame");
+}
